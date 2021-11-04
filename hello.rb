@@ -23,10 +23,12 @@ puts number / num
 puts 10 / 3.0 # When Integers (not decimal) meet Float (decimal), the result will be Float
 
 number = 9.623
-puts("How to print numbers " + num.to_s)
+puts("How to print numbers with text: " + num.to_s)
 
 bool = true
+puts bool
 bool = false
+puts("Hhehe: " + bool.to_s)
 
 # Lesson 3, String Methods
 text = "Upcased Letters"
@@ -63,5 +65,11 @@ print "Again: "
 name = gets.chomp()
 puts("That's it: " + name + ", you did it")
 
-# Lesson 6, Calculator
+# Short Review 1, Calculator
 # Check calcu.rb
+
+# Short Review 2, Mad Libs
+# Check mad.rb
+
+# Lesson 6, Arrays
+# Continued in rubby.rb
