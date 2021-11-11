@@ -1,0 +1,3 @@
+Hello this is a text file.
+Go learn from hello.rb
+Bye

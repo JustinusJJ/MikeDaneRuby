@@ -1,4 +1,5 @@
 # Previous Lessons in hello.rb
+# Mad Libs
 print "Color: "
 clr = gets.chomp()
 print "Something: "

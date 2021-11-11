@@ -100,7 +100,7 @@ num3 = gets.chomp().to_f
 
 puts("Max num is " + max(num1, num2, num3).to_s)
 
-# Short Review 3, Updated Calcu
+# Short Review 3, Updated Calculator
 # Continued in calcu.rb
 
 # Lesson 11, Selection (CASE)
@@ -131,3 +131,62 @@ end
 
 # Change to see
 puts day_name("mon")
+
+# Lesson 12, Looping (While)
+idx = 1
+while idx <= 5
+    puts "Do everything before end, while the condition is valid"
+    puts idx
+    idx += 1
+    puts "Avoid infinite loops!"
+end
+
+# Short Review 4, Guessing Game
+# Continued in guess.rb
+
+# Lesson 13, Looping (For)
+friends = ["Kev", "Karen", "Oz", "Angela", "Andy"]
+for friend in friends
+    # You can replace 'friend' with any other naming
+    print (friend + " ")
+end
+puts ""
+
+
+friends.each do |friend|
+    # Similar to for
+    print (friend + " ")
+end
+puts ""
+
+for i in 0..5
+    # 0..5 = 0, 1, 2, 3, 4, 5
+    print (i.to_s + " ")
+end
+puts ''
+
+6.times do |x|
+    print (x.to_s + " ")
+end
+puts ''
+
+# Short Review 5, Exponent
+def pow(base, pow)
+    rs = 1
+    pow.times do |i|
+       rs = rs * base 
+    end
+
+    return rs
+end
+puts pow(5, 3)
+
+# Lesson 14, Comments
+# As You have seen, you can comment using #
+# Or block the words u want to comment, then press ctrl + /
+=begin
+    or use begin end
+=end
+
+# Lesson 15, Reading files
+# Continued in files.rb
