@@ -39,3 +39,27 @@ File.open("hello.txt", "r+") do |file|
     file.readline()
     file.write("\nr+ is read & write, check what happens")
 end
+
+# Lesson 17, Handling Errors
+# Error Example:
+num = [1, 2, 3, 4] 
+# print num["dog"]
+# Uncomment 46
+
+# Handle it by:
+begin
+    # puts num["dog"]
+    print 10/0
+rescue TypeError
+    # Comment 52, uncomment 51
+    puts "Because it's an error, go here"
+rescue ZeroDivisionError => e
+    # Comment 51, uncomment 52
+    puts ("Error message: " + e.to_s)
+rescue
+    # Try comment 51 & 52
+    puts "IDK what error"
+end
+
+# Lesson 18, Class & Objects
+# Continued in obj.rb
